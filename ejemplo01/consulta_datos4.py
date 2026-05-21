@@ -28,12 +28,12 @@ session = Session()
 clubs = session.query(Club).join(Jugador).\
         filter(Jugador.nombre.like("%Da%")).all()
 # print(clubs)
-print("Consulta 1 ")
+#print("Consulta 1 ")
 """
 Consulta 1 
 Club: nombre=Barcelona deporte=Fútbol fundación=1920
 """
-# for e in clubs: 
+#for e in clubs: 
 #    print(e) 
 
 # Obtener un listado de todos los registros 
@@ -48,8 +48,10 @@ Club: nombre=Barcelona deporte=Fútbol fundación=1920
 registros = session.query(Club, Jugador).join(Jugador).\
          filter(Jugador.nombre.like("%Da%")).all()
  
-print("Consulta 2 ")
-# print(registros)
+# print("Consulta 2 ")
+#for c in registros:
+#    print(c)
+
 """
 
 Consulta 2 
