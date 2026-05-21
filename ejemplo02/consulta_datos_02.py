@@ -22,4 +22,5 @@ session = Session()
 matriculas = session.query(Matricula).all()
 
 for m in matriculas:
-    print(m, m.estudiante, m.modulo)
+    print(f"PERIODO: {m.periodo} ESTUDIANTE: {m.estudiante.nombre} {m.estudiante.apellido} SIGUIENDO EL MODULO: {m.modulo.nombre}")
+    print("////////////////////////////")
